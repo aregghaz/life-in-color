@@ -1,6 +1,4 @@
 <style>
-
-
     .page1 .text1 {
         padding-top: 42px;
         color: #bec01b;
@@ -46,8 +44,6 @@
     .block3 time, a, .index3_h3_header, #futterSrong, #headerLogo {
         color: #bec01b;
     }
-
-
 </style>
 <div class="main">
     <!--==============================Content=================================-->
@@ -75,7 +71,6 @@
                         Occupational Therapy intervention pathway through which physical and mental recovering targeted
                         activities and work ability of disabilities.
                     </p>
-
                     <p>Ergotherapy / Occupational therapy / term employment through therapy / occupation-
                          Employment /. Many believe that the occupational therapy profession in
                         general is new, however,the world stage it is not.Pinele profession founders are Philip and
@@ -83,7 +78,8 @@
                         methods, and these years are the golden years for the development of
                         Occupational Therapy.1914 Pinele and Tyuke began to create an organization for people who are
                         interested the specialty Ergotherapy.1917 On March 15, he was based in NSPOT- (National Society
-                        for the Promotion of Occupational Therapy): NSPOT- is now called the American occupational therapists
+                        for the Promotion of Occupational Therapy): NSPOT- is now called the American occupational
+                        therapists
                         Association (AOTA):</p>
                 </div>
             </div>
@@ -91,8 +87,7 @@
         <!--==============================end iframe ՄԱՍՆԱԿՑԵԼ=================================-->
         <!--==============================end Content ՏԵՍԱՀՈԼՈՎԱԿ=================================-->
         <div class="grid_4 prefix_1">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donationEN.php' ?>
-
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donationEN.php' ?>
             <h4 class="head1">Archive</h4>
             <div class="block3">
                 <time datetime='2013-01-01'><span>21</span>Նոյ.</time>

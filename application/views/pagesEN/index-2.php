@@ -1,6 +1,5 @@
 <!--==============================Կրթություն================================-->
 <style>
-
     .btn-danger {
         background-color: #0052da;
     !important;
@@ -47,7 +46,6 @@
 </style>
 <div class="main">
     <!--==============================Content=================================-->
-
     <div class="container_12">
         <div class="grid_8">
             <div class="row">
@@ -55,41 +53,35 @@
                     <?php foreach ($educations as $item): ?>
                         <div class="col-sm-12 col-md-12">
                             <div class="thumbnail">
-                                <h3><?= $item['nameEN'] ?></h3>
+                                <h3><?php echo  $item['nameEN'] ?></h3>
                                 <?php if ($item['img']) { ?>
-                                    <img src="<?= $item['img'] ?>" alt="$item['nameAM']">
+                                    <img src="<?php  echo base_url();?>images/education/<?php echo  $item['img'] ?>" alt="<?php echo  $item['img'] ?>">
                                 <?php } ?>
                                 <div class="caption">
-
-                                    <p><?= $item['textEN'] ?></p>
-
+                                    <p><?php echo  $item['textEN'] ?></p>
                                 </div>
                                 <button type="submit" class="btn" style="" data-toggle="modal" data-target=".bs-<?= $item['id'] ?>-modal-lg">Read More</button>
                             </div>
-
                         </div>
                     <? endforeach; ?>
                 <? }; ?>
             </div>
             <?php if ($educations) { ?>
                 <?php foreach ($educations as $item): ?>
-
-                    <div class="modal fade bs-<?= $item['id'] ?>-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+                    <div class="modal fade bs-<?php echo  $item['id'] ?>-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
                         <div class="modal-dialog modal-lg " role="document">
                             <div class="modal-content ">
-                                <div class="page-header"><strong class="read-more"> <?= $item['nameEN'] ?></strong>
+                                <div class="page-header"><strong class="read-more"><?php echo  $item['nameEN'] ?></strong>
                                 </div>
-                                <p><?= $item['iframeEN'] ?></p>
-
+                                <p><?php echo  $item['iframeEN'] ?></p>
                             </div>
                         </div>
                     </div>
                 <? endforeach; ?>
             <? }; ?>
         </div>
-
         <div class="grid_4">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donationEN.php' ?>
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donationEN.php' ?>
 
         </div>
     </div>

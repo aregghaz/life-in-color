@@ -39,15 +39,14 @@
             <?php if ($partner) { ?>
                 <?php foreach ($partner as $item): ?>
             <div class="panel " style="border: 1px solid #04bacf">
-                <div class="panel-heading" id="partners" ><h3 class="panel-title"><a href="<?= $item['link']; ?>"><?= $item['nameAM']; ?></a></h3></div>
-                <div class="panel-body"><?= $item['textAM']; ?></div>
+                <div class="panel-heading" id="partners" ><h3 class="panel-title"><a href="<?php echo  $item['link']; ?>"><?php echo  $item['nameAM']; ?></a></h3></div>
+                <div class="panel-body"><?php echo  $item['textAM']; ?></div>
             </div>
                     <? endforeach; ?>
             <? }; ?>
         </div>
-
         <div class="grid_4">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donation.php' ?>
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donation.php' ?>
             <a href="http://enothe.eu/"><img class="logo_class" src="<?php echo base_url() ?>images/logos/enothe.jpg"  alt="enothe"></a>
             <a href="http://www.aota.org/"><img class="logo_class" src="<?php echo base_url() ?>images/logos/lota.png" alt="lota"></a>
             <a href="http://www.wfot.org/"><img class="logo_class" src="<?php echo base_url() ?>images/logos/wfot.png" alt="wfot"></a>

@@ -27,7 +27,6 @@
 </script>
 <div class="main">
     <!--==============================Հետադարձ կապContent=================================-->
-
     <div class="container_12">
         <div class="grid_4">
             <h3 class="index6_address">Հետադարձ կապ</h3>
@@ -36,11 +35,9 @@
                     <dl>
                         <dd><span>ՀԵռ:</span>+374 93 555 982</dd>
                         <dd><span>ՀԵռ:</span>+374 91 552 152</dd>
-
                         <dd>Էլ. փոստ: <a href="" class="col1">mail@demolink.org</a></dd>
                     </dl>
                 </address>
-
             </div>
         </div>
         <div class="grid_8">
@@ -52,7 +49,6 @@
                 <label class="name">
                     <input type="text" placeholder="Անուն:" data-constraints="@Required "/>
                     <span class="empty-message">*Տողը պարտադիր պետք է լրացվի.</span>
-
                 </label>
                 <label class="email">
                     <input type="text" placeholder="Էլ. հասցե:" data-constraints="@Required @Email"/>

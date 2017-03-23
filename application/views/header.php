@@ -176,12 +176,12 @@
                 <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                     <ul class="sf-menu">
                         <li><a href="<?php echo base_url() ?>">Գլխավոր</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/about">Մեր մասին</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/education">Կրթություն</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/video">Տեսադարան</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/partners">Գործընկերներ</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/news">Նորություններ</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/Pages/contacts">Հետադարձ կապ</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/about">Մեր մասին</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/education">Կրթություն</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/video">Տեսադարան</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/partners">Գործընկերներ</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/news">Նորություններ</a></li>
+                        <li><a href="<?php echo base_url() ?>Pages/contacts">Հետադարձ կապ</a></li>
                     </ul>
                 </nav>
                 <div class="clear"></div>

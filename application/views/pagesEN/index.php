@@ -85,10 +85,8 @@
         </div>
         <!--==============================end Header slider=================================-->
         <div class="grid_4">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donationEN.php' ?>
-
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donationEN.php' ?>
         </div>
-
         <div class="clear"></div>
         <!--==============================Thumbnail labelOUR MISSION================================-->
         <div class="grid_3">
@@ -118,13 +116,11 @@
                         • Establishment and maintenance of a professional ethical code.<br>
                         • Conducting scientific research and ensuring their application in practice.<br>
                         • Organizing conferences, seminars, round tables, and camping.<br>
-
                     </p>
                 </div>
             </div>
         </div>
         <!--==============================end iframe ՄԵՐ ԱՌԱՔԵԼՈՒԹՅՈՒՆԸ================================-->
-
         <!--==============================Thumbnail label ՀԻՄՆԱԴԻՐ ԱՆԴԱՄՆԵՐՐ================================-->
         <div class="grid_3">
             <div class="block2 maxheight">
@@ -146,8 +142,6 @@
             </div>
         </div>
         <!--==============================end Thumbnail label ՎԵՐՋԻՆ ԾՐԱԳՐԵՐ================================-->
-
-
         <!--==============================iframe ՀԻՄՆԱԴԻՐ ԱՆԴԱՄՆԵՐ================================-->
         <div class="modal fade bs-44-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
             <div class="modal-dialog modal-lg" role="document">
@@ -158,14 +152,15 @@
                             <?php foreach ($members as $item): ?>
                                 <div class="col-sm-6 col-md-4">
                                     <div class="thumbnail alert alert-success">
-                                        <img src="<?php echo base_url() ?>/<?= $item['link'] ?>"
-                                             alt="<?= $item['nameEN'] ?>" class="img-circle" width="200" height="200"
-                                             title="<?= $item['nameEN'] ?>">
+                                        <img src="<?php echo base_url() ?>/<?php echo $item['link'] ?>"
+                                             alt="<?php echo $item['nameEN'] ?>" class="img-circle" width="200"
+                                             height="200"
+                                             title="<?php echo $item['nameEN'] ?>">
                                         <div class="caption">
-                                            <h3><?= $item['nameEN'] ?></h3>
-                                            <p><?= $item['jobEN'] ?></p>
+                                            <h3><?php echo $item['nameEN'] ?></h3>
+                                            <p><?php echo $item['jobEN'] ?></p>
                                             <button class="alright btn btn-link" data-toggle="modal"
-                                                    data-target=".bs-<?= $item['id'] ?>-modal-lg" role="button">
+                                                    data-target=".bs-<?php echo $item['id'] ?>-modal-lg" role="button">
                                                 Read More
                                             </button>
                                         </div>
@@ -174,7 +169,6 @@
                             <? endforeach; ?>
                         <? }; ?>
                     </div>
-
                 </div>
             </div>
         </div>
@@ -182,22 +176,19 @@
         <!--==============================iframe ՀԻՄՆԱԴԻՐ ԱՆԴԱՄՆԵՐ rezumes================================-->
         <?php if ($members) { ?>
             <?php foreach ($members as $item): ?>
-                <div class="modal fade bs-<?= $item['id'] ?>-modal-lg" tabindex="-1" role="dialog"
+                <div class="modal fade bs-<?php echo $item['id'] ?>-modal-lg" tabindex="-1" role="dialog"
                      aria-labelledby="myLargeModalLabel">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content">
-                            <div class="page-header"><strong class="read-more"><?= $item['nameEN'] ?></strong></div>
-
-                            <p><?= $item['textEN'] ?></p>
-
+                            <div class="page-header"><strong class="read-more"><?php echo $item['nameEN'] ?></strong>
+                            </div>
+                            <p><?php echo $item['textEN'] ?></p>
                         </div>
                     </div>
                 </div>
             <? endforeach; ?>
         <? }; ?>
         <!--============================== end iframe ՀԻՄՆԱԴԻՐ ԱՆԴԱՄՆԵՐ rezumes================================-->
-
-
         <!--==============================Thumbnail label ՀՐԱՊԱՐԱԿՈՒՄՆԵՐ================================-->
         <div class="grid_3">
             <div class="block2 maxheight">
@@ -276,7 +267,6 @@
                         to overcome difficulties. Working with her is to understand the potential of the individuals,
                         groups and communities we are advantaged to go hand in hand to. She is always there for support.
                         Her efforts are priceless!
-
                     </p>
                 </div>
             </div>
@@ -412,5 +402,4 @@
             </div>
         </div>
         <!--==============================end Footer slider=================================-->
-
     </div>

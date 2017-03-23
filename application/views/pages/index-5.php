@@ -36,11 +36,9 @@
     <div class="container_12">
         <div class="grid_8">
             <h4 class="index5_list" style="padding-top: 0">Նորություններ</h4>
-
         </div>
         <div class="grid_4">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donation.php' ?>
-
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donation.php' ?>
         </div>
     </div>
 

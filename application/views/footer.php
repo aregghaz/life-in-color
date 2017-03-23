@@ -5,7 +5,6 @@
         <div class="grid_12 ">
             <div class="socials">
                 <a href="https://www.facebook.com/Armenian-Ergo-Therapists-Association-Arm-ETA-195420023867299/"></a>
-
                 <div class="clear"></div>
             </div>
             <div class="copy">

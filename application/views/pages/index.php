@@ -85,7 +85,7 @@
         </div>
         <!--==============================end Header slider=================================-->
         <div class="grid_4">
-            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/life-in-color/application/views/donation.php' ?>
+            <?php include_once $_SERVER['DOCUMENT_ROOT'] . '/armeta/application/views/donation.php' ?>
 
         </div>
 
@@ -156,14 +156,15 @@
                             <?php foreach ($members as $item): ?>
                                 <div class="col-sm-6 col-md-4 ">
                                     <div class="thumbnail alert alert-success">
-                                        <img src="<?= $item['link'] ?>" class="img-circle" width="200" height="200"
-                                             title="<?= $item['nameEN'] ?>">
+                                        <img src="<?php echo $item['link'] ?>" class="img-circle" width="200"
+                                             height="200"
+                                             title="<?php echo $item['nameEN'] ?>">
                                         <div class="caption">
-                                            <h3><?= $item['nameAM'] ?></h3>
-                                            <p><?= $item['jobAM'] ?></p>
+                                            <h3><?php echo $item['nameAM'] ?></h3>
+                                            <p><?php echo $item['jobAM'] ?></p>
                                             <button class="alright btn btn-link" data-toggle="modal"
-                                                    data-target=".bs-<?= $item['id'] ?>-modal-lg" role="button">Կարդալ
-                                                ավելին
+                                                    data-target=".bs-<?php echo $item['id'] ?>-modal-lg" role="button">
+                                                Կարդալ ավելին
                                             </button>
                                         </div>
                                     </div>
@@ -179,13 +180,14 @@
         <!--==============================iframe ՀԻՄՆԱԴԻՐ ԱՆԴԱՄՆԵՐ rezumes================================-->
         <?php if ($members) { ?>
             <?php foreach ($members as $item): ?>
-                <div class="modal fade bs-<?= $item['id'] ?>-modal-lg" tabindex="-1" role="dialog"
+                <div class="modal fade bs-<?php echo $item['id'] ?>-modal-lg" tabindex="-1" role="dialog"
                      aria-labelledby="myLargeModalLabel">
                     <div class="modal-dialog modal-lg" role="document">
                         <div class="modal-content ">
-                            <div class="page-header"><strong class="read-more"><?= $item['nameAM'] ?></strong></div>
+                            <div class="page-header"><strong class="read-more"><?php echo $item['nameAM'] ?></strong>
+                            </div>
 
-                            <div class="well well-lg"><?= $item['textAM'] ?></div>
+                            <div class="well well-lg"><?php echo $item['textAM'] ?></div>
 
                         </div>
                     </div>
@@ -230,7 +232,8 @@
             <div class="block2 maxheight">
                 <div class="title">Պատվավոր անդամներ</div>
                 <div class="pad">
-                    <p >Հաննեկե վան Բրյուգգեն, պրոֆեսոր, էրգոթերապիստ, Մեծ Բրիտանիայի Բրայտոնի համալսարանի պատվավոր դոկտոր,Էրգոթերապիայի Բարձրագույն ...</p>
+                    <p>Հաննեկե վան Բրյուգգեն, պրոֆեսոր, էրգոթերապիստ, Մեծ Բրիտանիայի Բրայտոնի համալսարանի պատվավոր
+                        դոկտոր,Էրգոթերապիայի Բարձրագույն ...</p>
                     <button type="button" class="alright btn btn-link" data-toggle="modal"
                             data-target=".bs-66-modal-lg">
                         Կարդալ ավելին
@@ -284,62 +287,62 @@
             <h2 id="carussel_header">Ասոցիացիայի անդամների աշխատանքային գործունեությունը</h2>
             <div id="owl">
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/ZaruhiHarutyunyan.jpg" width="190"
+                    <a href="#"><img src="images/people/ZaruhiHarutyunyan.jpg" width="190"
                                      height="183" alt="Զարուհի Հարությունյան">Զարուհի Հարությունյան<br>
                         Խարբերդի մասնագիտացված մանկատուն</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/MariannaHarutyunyan.JPG" width="190"
+                    <a href="#"><img src="images/people/MariannaHarutyunyan.JPG" width="190"
                                      height="183" alt="Մարիաննա Հարությունյան">Մարիաննա Հարությունյան<br>
                         ՀՀ բժշկասոցիալական փորձաքննության գործակալություն</a>
                 </div>
                 <div class="item it2" id="itT">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/TatevGhazaryan.jpg" width="190"
+                    <a href="#"><img src="images/people/TatevGhazaryan.jpg" width="190"
                                      height="183" alt="Տաթև Ղազարյան">Տաթև Ղազարյան<br>
                         "Լիարժեք կյանք" ՀԿ</a>
                 </div>
                 <div class="item it3">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/rimagalastyan.JPG" width="190"
+                    <a href="#"><img src="images/people/rimagalastyan.JPG" width="190"
                                      height="183" alt="Ռիմա Գալստյան">Ռիմա Գալստյան<br>
                         Իմ ուղին ուսումնա - վերականգնողական կենտրոն</a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/AnahitSafaryan.JPG" width="190"
+                    <a href="#"><img src="images/people/AnahitSafaryan.JPG" width="190"
                                      height="183" alt="Անահիտ Սաֆարյան">Անահիտ Սաֆարյան<br>
                         ԱրԲԵՍ առողջության կենտրոն</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>images/people/ruzanXacikyan.jpg" width="190"
+                    <a href="#"><img src="images/people/ruzanXacikyan.jpg" width="190"
                                      height="183" alt="Ռուզան Խաչիկյան">Ռուզան Խաչիկյան<br>
                         Իմ ուղին ուսումնա - վերականգնողական կենտրոն</a>
                 </div>
                 <div class="item it2">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/LilitNazayan.jpg" width="190"
+                    <a href="#"><img src="images/people/LilitNazayan.jpg" width="190"
                                      height="183" alt="Լիլիթ Նազարյան">Լիլիթ Նազարյան<br>
                         Խարբերդի մասնագիտացված մանկատուն</a>
                 </div>
                 <div class="item it3" id="itM">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/MeriAvetisyan.jpg" width="190"
+                    <a href="#"><img src="images/people/MeriAvetisyan.jpg" width="190"
                                      height="183" alt="Մերի Ավետիսյան">Մերի Ավետիսյան<br>
                         "Լիարժեք կյանք" ՀԿ</a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/MuradyanNarine.jpg" width="190"
+                    <a href="#"><img src="images/people/MuradyanNarine.jpg" width="190"
                                      height="183" alt="Լիլիթ Նազարյան">Լիլիթ Մուրադյան<br>
                         TMM- Սովորեցրու ինձ ավելին -ուսուցման և զարգացման կենտրոն</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>images/people/MariamMargaryan.jpg" width="190"
+                    <a href="#"><img src="images/people/MariamMargaryan.jpg" width="190"
                                      height="183" alt="Լիլիթ Նազարյան">Մարիամ Մարգարյան<br>
                         Արմենակ և Աննա Թադեոսեանների բժշկական կենտրոն</a>
                 </div>
                 <div class="item it2">
-                    <a href="#"><img src="<?php echo base_url() ?>images/people/Maneabajanyan.jpg" width="190"
+                    <a href="#"><img src="images/people/Maneabajanyan.jpg" width="190"
                                      height="183" alt="Մանե Աբաջյան">Մանե Աբաջյան<br>
                         Երևանի բժշկահոգեբանամանկավարժական գնահատման կենտրոն</a>
                 </div>
                 <div class="item it3">
-                    <a href="#"><img src="<?php echo base_url() ?>images/people/ArevikManukyan.jpg" width="190"
+                    <a href="#"><img src="images/people/ArevikManukyan.jpg" width="190"
                                      height="183" alt="Արևիկ Մանուկյան">Արևիկ Մանուկյան<br>
                         Արմենակ և Աննա Թադեոսեանների բժշկական կենտրոն</a>
                 </div>
@@ -351,57 +354,57 @@
         <div class="grid_12" id="owl2Carussel">
             <div id="owl2">
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/GayaneHovhannisyan.JPG" width="190"
+                    <a href="#"><img src="images/people/GayaneHovhannisyan.JPG" width="190"
                                      height="183" alt="Գայանե Հովհաննիսյան">Գայանե Հովհաննիսյան<br>
                         Խարբերդի մասնագիտացված մանկատուն</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/Elinamirzoyan.jpg" width="190"
+                    <a href="#"><img src="images/people/Elinamirzoyan.jpg" width="190"
                                      height="183" alt="Էլինա ՄԻրզոյան">Էլինա ՄԻրզոյան<br>
                         Մասնավոր ոլորտ Լյուքսենբուրգ</a>
                 </div>
                 <div class="item it2">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/MeriPetrosyan.JPG" width="190"
+                    <a href="#"><img src="images/people/MeriPetrosyan.JPG" width="190"
                                      height="183" alt="Մերի Պետրոսյան">Մերի Պետրոսյան<br>
                         Իմ ուղին ուսումնա - վերականգնողական կենտրոն</a>
                 </div>
                 <div class="item it3">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/InessaHautyunyan.JPG" width="190"
+                    <a href="#"><img src="images/people/InessaHautyunyan.JPG" width="190"
                                      height="183" alt="Ինեսսա Հարոթյունյան">Ինեսսա Հարությունյան<br>
                         Երեխաների զարգացման միջազգային կենտրոն</a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/LilitAraqelyan.JPG" width="190"
+                    <a href="#"><img src="images/people/LilitAraqelyan.JPG" width="190"
                                      height="183" alt="Լիլիթ Առաքելյան">Լիլիթ Առաքելյան<br>
                         Արաբկիր բժշկական համալիր</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/TatevikNesisyan.JPG" width="190"
+                    <a href="#"><img src="images/people/TatevikNesisyan.JPG" width="190"
                                      height="183" alt="Տաթևիկ Ներսիսյան">Տաթևիկ Ներսիսյան<br>
                         ԱրԲԵՍ առողջության կենտրոն</a>
                 </div>
                 <div class="item it2">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/ruzanhovhannisyan.JPG" width="190"
+                    <a href="#"><img src="images/people/ruzanhovhannisyan.JPG" width="190"
                                      height="183" alt="Ռուզան Հովհաննիսյան">Ռուզան Հովհաննիսյան<br>
                         Իմ ուղին ուսումնա - վերականգնողական կենտրոն</a>
                 </div>
                 <div class="item it3">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/GayaneOhanyan.jpg" width="190"
+                    <a href="#"><img src="images/people/GayaneOhanyan.jpg" width="190"
                                      height="183" alt="Գայանե ՕՀանյան">Գայանե ՕՀանյան<br>
                         "Փրկություն" ՀԿ</a>
                 </div>
                 <div class="item">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/SedaMIzoyan.jpg" width="190"
+                    <a href="#"><img src="images/people/SedaMIzoyan.jpg" width="190"
                                      height="183" alt="ՍԵդա Միրոյան">ՍԵդա Միրոյան<br>
                         Երևանի հ.9 մանկական պոլիկլինիկա</a>
                 </div>
                 <div class="item it1">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/TatevSerobyan.jpg" width="190"
+                    <a href="#"><img src="images/people/TatevSerobyan.jpg" width="190"
                                      height="183" alt="Տաթև Սերոբյան">Տաթևիկ Սերոբյան<br>
                         Երևանի հ.92 մանկական պոլիկլինիկա</a>
                 </div>
                 <div class="item it2">
-                    <a href="#"><img src="<?php echo base_url() ?>/images/people/LiliaOsipova.jpg" width="190"
+                    <a href="#"><img src="images/people/LiliaOsipova.jpg" width="190"
                                      height="183" alt="Լիլիա Օսիպովա">Լիլիա Օսիպովա<br>
                         Մասնավոր վոլորտ Հայաստան</a>
                 </div>

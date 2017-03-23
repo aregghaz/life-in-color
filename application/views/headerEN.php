@@ -181,13 +181,13 @@
             <div class="menu_block">
                 <nav class="horizontal-nav full-width horizontalNav-notprocessed">
                     <ul class="sf-menu">
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN">General</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/about">About us</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/education">Education</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/video">Videos</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/partners">Partners</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/news">News</a></li>
-                        <li><a href="<?php echo base_url() ?>index.php/PagesEN/contacts">Contact Us</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN">General</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/about">About us</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/education">Education</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/video">Videos</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/partners">Partners</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/news">News</a></li>
+                        <li><a href="<?php echo base_url() ?>PagesEN/contacts">Contact Us</a></li>
                     </ul>
                 </nav>
                 <div class="clear"></div>
